@@ -20,12 +20,12 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Aadit Lele" }],
   creator: "Aadit Lele",
-  metadataBase: new URL("https://YOUR-DOMAIN.com"),
+  metadataBase: new URL("https://aadit13579.github.io/"),
   openGraph: {
     title: "Aadit Lele | Computer Engineering Student",
     description:
       "Computer Engineering student exploring systems, distributed infrastructure, backend engineering, compiler design, and efficient computing.",
-    url: "https://YOUR-DOMAIN.com",
+    url: "https://aadit13579.github.io/",
     siteName: "Aadit Lele",
     type: "website",
   },
