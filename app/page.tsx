@@ -1,7 +1,7 @@
-import React from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Button } from '@/components/ui/Button';
-import Image from 'next/image';
+import React from "react";
+import { Navbar } from "@/components/layout/Navbar";
+import { Button } from "@/components/ui/Button";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -15,12 +15,15 @@ export default function Home() {
           xmlns="http://www.w3.org/2000/svg"
           className="
             absolute
-            top-[35%] right-[-35%]
-            w-[150%] h-[65%]
-            md:top-[-10%] md:right-[-12%]
-            md:w-[75%] md:h-[120%]
+            top-[55%] right-[-45%]
+            w-[155%] h-[48%]
+            rotate-12
             text-[#008B8B] fill-current
-            transform rotate-12
+
+            md:top-[-10%]
+            md:right-[-12%]
+            md:w-[75%]
+            md:h-[120%]
           "
         >
           <path
@@ -31,22 +34,58 @@ export default function Home() {
       </div>
 
       {/* Hero */}
-      <div className="max-w-7xl mx-auto px-6 md:px-16 min-h-screen flex flex-col md:flex-row items-center justify-center pt-24 md:pt-0 relative z-10">
-
-        {/* Text */}
-        <div className="w-full md:w-1/2 space-y-6 text-left pb-8 md:pb-0 z-20">
+      <div
+        className="
+          max-w-7xl mx-auto
+          px-6 md:px-16
+          min-h-screen
+          flex flex-col md:flex-row
+          items-center
+          justify-center
+          pt-20 md:pt-0
+          relative z-10
+        "
+      >
+        {/* Text content */}
+        <div
+          className="
+            w-full md:w-1/2
+            space-y-6
+            text-left
+            pb-4 md:pb-0
+            z-20
+          "
+        >
           <p className="text-[#008B8B] font-bold uppercase tracking-widest text-xs md:text-sm">
             Systems Engineer & Researcher
           </p>
 
-          <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight font-serif">
-            Hello, I'm <br /> Aadit Lele
+          <h1
+            className="
+              text-5xl
+              md:text-7xl
+              font-extrabold
+              text-slate-900
+              leading-tight
+              font-serif
+            "
+          >
+            Hello, I'm
+            <br />
+            Aadit Lele
           </h1>
 
-          <p className="text-slate-600 max-w-md text-base md:text-lg leading-relaxed">
-            I like building the systems behind software, from scalable backends
-            and distributed infrastructure to high-concurrency pipelines and
-            efficient AI applications.
+          <p
+            className="
+              text-slate-600
+              max-w-md
+              text-base md:text-lg
+              leading-relaxed
+            "
+          >
+            I like building the systems behind software, from scalable
+            backends and distributed infrastructure to high-concurrency
+            pipelines and efficient AI applications.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-4">
@@ -66,19 +105,39 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Image */}
-        <div className="w-full md:w-1/2 flex justify-center md:justify-end relative z-10">
-          <div className="relative w-64 h-72 md:w-[500px] md:h-[600px]">
+        {/* Portrait */}
+        <div
+          className="
+            w-full md:w-1/2
+            flex
+            justify-center md:justify-end
+            relative
+            z-10
+            mt-6 md:mt-0
+          "
+        >
+          <div
+            className="
+              relative
+              w-64 h-80
+              md:w-[500px] md:h-[600px]
+            "
+          >
             <Image
               src="/thisimage.png"
               alt="Aadit Amit Akshata Lele"
               fill
-              className="object-contain object-bottom scale-125 md:scale-200 drop-shadow-2xl"
+              className="
+                object-contain
+                object-bottom
+                scale-110
+                md:scale-200
+                drop-shadow-2xl
+              "
               priority
             />
           </div>
         </div>
-
       </div>
     </main>
   );
