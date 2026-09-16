@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://aadit13579.github.io/";
+  const baseUrl = "https://aadit13579.github.io";
 
   return [
     {
@@ -19,11 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/projects/veda`,
+      url: `${baseUrl}/contacts`,
       lastModified: new Date(),
     },
     {
@@ -31,11 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/projects/llm-observatory`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/projects/isl`,
+      url: `${baseUrl}/projects/ISL`,
       lastModified: new Date(),
     },
   ];
