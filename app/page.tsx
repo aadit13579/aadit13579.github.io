@@ -7,52 +7,73 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-slate-50 relative overflow-hidden font-sans">
       <Navbar />
-      
-      {/* 
-        The wavy background blob from the reference image.
-        Positioned absolutely to stay behind the content on the right side.
-      */}
-      <div className="absolute top-0 right-0 w-full md:w-3/5 h-full overflow-hidden pointer-events-none z-0">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="absolute top-[-10%] right-[-20%] w-[120%] h-[120%] text-[#008B8B] fill-current transform rotate-12 scale-100">
-          <path d="M44.7,-76.4C58.9,-69.2,71.8,-59.1,81.3,-46.3C90.8,-33.5,96.9,-18,97.1,-2.4C97.3,13.2,91.7,28.9,81.8,41.9C71.9,54.9,57.7,65.2,42.2,71.6C26.7,78,9.9,80.5,-6,82.4C-21.9,84.3,-36.9,85.6,-50.2,79.5C-63.5,73.4,-75,59.9,-82.9,44.5C-90.8,29.1,-95.1,11.8,-94.1,-5.1C-93.1,-22,-86.8,-38.5,-76.2,-51.7C-65.6,-64.9,-50.7,-74.8,-35.6,-80.5C-20.5,-86.2,-5.1,-87.7,9.9,-84.9C24.9,-82.1,30.5,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
+
+      {/* Background blob */}
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+        <svg
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+          className="
+            absolute
+            top-[35%] right-[-35%]
+            w-[150%] h-[65%]
+            md:top-[-10%] md:right-[-12%]
+            md:w-[75%] md:h-[120%]
+            text-[#008B8B] fill-current
+            transform rotate-12
+          "
+        >
+          <path
+            d="M44.7,-76.4C58.9,-69.2,71.8,-59.1,81.3,-46.3C90.8,-33.5,96.9,-18,97.1,-2.4C97.3,13.2,91.7,28.9,81.8,41.9C71.9,54.9,57.7,65.2,42.2,71.6C26.7,78,9.9,80.5,-6,82.4C-21.9,84.3,-36.9,85.6,-50.2,79.5C-63.5,73.4,-75,59.9,-82.9,44.5C-90.8,29.1,-95.1,11.8,-94.1,-5.1C-93.1,-22,-86.8,-38.5,-76.2,-51.7C-65.6,-64.9,-50.7,-74.8,-35.6,-80.5C-20.5,-86.2,-5.1,-87.7,9.9,-84.9C24.9,-82.1,30.5,-83.6,44.7,-76.4Z"
+            transform="translate(100 100)"
+          />
         </svg>
       </div>
 
-      <div className="max-w-7xl mx-auto px-8 md:px-16 min-h-screen flex flex-col md:flex-row items-center justify-center pt-24 md:pt-0 relative z-10">
-        
-        {/* Left Side: Text Content */}
-        <div className="w-full md:w-1/2 space-y-6 text-left pb-12 md:pb-0 z-20">
+      {/* Hero */}
+      <div className="max-w-7xl mx-auto px-6 md:px-16 min-h-screen flex flex-col md:flex-row items-center justify-center pt-24 md:pt-0 relative z-10">
+
+        {/* Text */}
+        <div className="w-full md:w-1/2 space-y-6 text-left pb-8 md:pb-0 z-20">
           <p className="text-[#008B8B] font-bold uppercase tracking-widest text-xs md:text-sm">
             Systems Engineer & Researcher
           </p>
-          
-          {/* Using a serif font for the main heading to match the reference */}
+
           <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight font-serif">
             Hello, I'm <br /> Aadit Lele
           </h1>
-          
+
           <p className="text-slate-600 max-w-md text-base md:text-lg leading-relaxed">
-            I like building the systems behind software, from scalable backends and distributed infrastructure to high-concurrency pipelines and efficient AI applications.
+            I like building the systems behind software, from scalable backends
+            and distributed infrastructure to high-concurrency pipelines and
+            efficient AI applications.
           </p>
-          
+
           <div className="flex flex-wrap items-center gap-4 pt-4">
             <Button asAnchor href="/projects" variant="solid">
               Projects
             </Button>
-            <Button asAnchor href="https://linkedin.com/in/aadit-lele" variant="outline" target="_blank" rel="noopener noreferrer">
+
+            <Button
+              asAnchor
+              href="https://linkedin.com/in/aadit-lele"
+              variant="outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               LinkedIn
             </Button>
           </div>
         </div>
 
-        {/* Right Side: Image Content */}
+        {/* Image */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-end relative z-10">
-          <div className="relative w-72 h-72 md:w-[500px] md:h-[600px]">
+          <div className="relative w-64 h-72 md:w-[500px] md:h-[600px]">
             <Image
               src="/thisimage.png"
               alt="Aadit Amit Akshata Lele"
               fill
-              className="object-contain object-bottom scale-200 drop-shadow-2xl"
+              className="object-contain object-bottom scale-125 md:scale-200 drop-shadow-2xl"
               priority
             />
           </div>
