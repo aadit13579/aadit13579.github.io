@@ -15,8 +15,8 @@ export default function Home() {
           xmlns="http://www.w3.org/2000/svg"
           className="
             absolute
-            top-[55%] right-[-45%]
-            w-[155%] h-[48%]
+            top-[48%] right-[-45%]
+            w-[155%] h-[52%]
             rotate-12
             text-[#008B8B] fill-current
 
@@ -113,13 +113,13 @@ export default function Home() {
             justify-center md:justify-end
             relative
             z-10
-            mt-6 md:mt-0
+            mt-2 md:mt-0
           "
         >
           <div
             className="
               relative
-              w-64 h-80
+              w-80 h-[420px]
               md:w-[500px] md:h-[600px]
             "
           >
@@ -130,7 +130,7 @@ export default function Home() {
               className="
                 object-contain
                 object-bottom
-                scale-110
+                scale-125
                 md:scale-200
                 drop-shadow-2xl
               "
