@@ -5,89 +5,39 @@ import Link from "next/link";
 const projects = [
   {
     number: "01",
-    title: "VEDA",
-    subtitle: "Visual Engine for Document Accessibility",
-    type: "Research / Systems",
-    date: "Jan 2026 – Apr 2026",
+    title: "Bunderbrains",
+    subtitle: "Junior Developer Intern",
+    type: "Systems",
+    date: "Sept 2025 – Feb 2026",
     description:
-      "A high-concurrency accessibility pipeline for complex academic PDFs, combining asynchronous OCR, document layout analysis, and multimodal reasoning.",
+      "Worked to build and maintain company applications, websites while building and integrating new features.",
     highlights: [
-      "7–10s Time-to-First-Audio",
-      "94% reading-order accuracy",
-      "0.2–0.4s OCR latency per region",
-      "Technical Research Paper accepted for presentation in IEEE TEMSMET2026",
+      "Built and deployed 25+ REST Modules across 4 core systems",
+      "Re-architected the media pipeline and optimised cloud storage and pipeline",
+      "Deployed AI-driven structured data extraction to automate 5+ operational workflows",
+      "Resolved 30+ production bugs across live platforms",
     ],
-    stack: ["Python", "asyncio", "Redis", "YOLO", "Tesseract", "LVLM"],
-    featured: true,
-    link:"https://github.com/aadit13579/VEDA",
+    stack: ["Python", "MySQL", "Flutter", "FastAPI", "scripts", "docker"],
+    featured: true
   },
   {
     number: "02",
-    title: "High Availibility Data Center Leveraging Bare Metal Hardware",
+    title: "IISER Mohali+Suraj Informatics",
     type: "Research / Systems",
-    date: "Jul 2025 – Jul 2026",
+    date: "June 2025 – June 2026",
+    subtitle:"Research Infrastructure Intern",
     description:
-      "Designed and deployed a fault-tolerant bare-metal infrastructure using Proxmox VE, Ceph distributed storage, VLAN segmentation, and automated VM recovery along with reverse proxy access from scratch",
+      "Worked with IISER and Suraj Informatics under a research project involving planning and building a data-centre from bare-metal college PC's from scratch",
     highlights: [
-      "30-second VM recovery time",
-      "Architected and deployed a scalable environment ",
-      "Engineered a distributed Ceph storage backbone for HA",
-      "Integrating isolated network routing via Raspberry Pi-based bridging for controlled external access to internal systems"
+      "Designed a VLAN-segmented, fault-tolerant network topology",
+      " 4-node Proxmox VE high-availability cluster ",
+      "Zero-downtime live migration",
+      "Designed and deployed a secure reverse-proxy architecture "
     ],
     stack: ["Proxmox", "VMs", "Computer networks", "Ceph"],
     featured: false,
     link:"/data-centre",
-  },
-  {
-    number: "03",
-    title: "LLM Observatory Node",
-    subtitle: "Distributed LLM Observability",
-    type: "Systems / Backend",
-    date: "Jul 2026 – Present",
-    description:
-      "A distributed observability platform for monitoring LLM inference through real-time latency, throughput, token usage, and system health metrics and analyzing model behaviour based on prompt length, temprature and other similar metrics",
-    highlights: [
-      "Real-time inference metrics",
-      "Asynchronous workers",
-      "Modular metric aggregation",
-    ],
-    stack: ["FastAPI", "Redis", "Grafana", "Python", "Async"],
-    featured: false
-  },
-  {
-    number: "04",
-    title: "ISL Translation",
-    subtitle: "Real-Time Indian Sign Language Translation",
-    type: "Research / Computer Vision",
-    date: "Jan 2025 – Jul 2025",
-    description:
-      "A real-time gesture recognition system designed for Indian Sign Language translation on resource-constrained hardware.",
-    highlights: [
-      "49 gesture classes",
-      "4,700+ images",
-      "87.6% mAP@0.5 · ~32 FPS",
-      "Technical Research Paper published in IEEE xplore"
-    ],
-    stack: ["YOLOv11", "Python", "Computer Vision", "Edge Inference"],
-    featured: false,
-    link:"/ISL",
-  },
-  {
-    number: "05",
-    title: "Persistent AVL Benchmarks",
-    type: "Functional Programming / Systems",
-    date: "Sept 2026 - Present",
-    description:
-      "An OCaml study comparing persistent and imperative AVL trees, focusing on structural sharing, memory usage, allocations, and operation latency.",
-    highlights: [
-      "Persistent vs. imperative AVL implementations",
-      "Structural sharing and memory behavior",
-      "Benchmarking allocations and operation latency",
-    ],
-    stack: ["Ocaml", "Data Structures", "Functional Programming", "Benchmarking"],
-    featured: false,
-    link:"https://github.com/aadit13579/persistent-avl-benchmarks",
-  },
+  }
 ];
 
 export default function ProjectsPage() {
@@ -104,11 +54,11 @@ export default function ProjectsPage() {
                 ← Back to Homepage
             </Link>
           <h1 className="font-serif text-7xl leading-[0.95] tracking-tight md:text-8xl">
-            Projects<span className="text-[#008B8B]">.</span>
+            Experience<span className="text-[#008B8B]">.</span>
           </h1>
 
           <p className="mt-8 max-w-4xl text-lg leading-8 text-[#334155]">
-            A collection of systems I’ve built, researched, and brought from ideas to working software.
+            Where I've worked and what I learnt from it.
           </p>
         </div>
       </section>
