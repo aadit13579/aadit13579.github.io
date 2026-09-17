@@ -7,8 +7,12 @@ export const metadata: Metadata = {
     template: "%s | Aadit Lele",
   },
   description:
-    "Aadit Lele is a Computer Engineering student interested in computer systems, distributed systems, backend engineering, compiler design, and efficient computing.",
+    "Aadit Lele is a Computer Engineering student interested in computer systems, distributed systems, machine learning systems, compiler design, and efficient computing.",
   authors: [{ name: "Aadit Lele" }],
+  creator: "Aadit Lele",
+  verification: {
+    google: "TUxb5SqB29UbBr1j0PqPPMPM1Ohp9YT1Wfn8iTXi5i4",
+  },
 };
 const geistSans = Geist({
   variable: "--font-geist-sans",
